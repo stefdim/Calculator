@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="screen">
+            0
+        </div>
+        <div class="clear btn">
+            <button class="first-button" onclick="clearScreen()">
+                C
+            </button>
+            <button class="button-operator" onclick="calculation()">&equals;</button>
+        </div>
+        <div class="button-numbers btn">
+            <button class="button-numbers-row" onclick="screenDisplay('9')">9</button>
+            <button class="button-numbers-row" onclick="screenDisplay('8')">8</button>
+            <button class="button-numbers-row" onclick="screenDisplay('7')">7</button>
+            <button class="button-operator" onclick="screenDisplay('/')">&divide;</button>
+        </div>
+        <div class="button-numbers btn">
+            <button class="button-numbers-row" onclick="screenDisplay('6')">6</button>
+            <button class="button-numbers-row" onclick="screenDisplay('5')">5</button>
+            <button class="button-numbers-row" onclick="screenDisplay('4')">4</button>
+            <button class="button-operator" onclick="screenDisplay('*')">&times;</button>
+        </div>
+
+        <div class="button-numbers btn">
+            <button class="button-numbers-row" onclick="screenDisplay('3')">3</button>
+            <button class="button-numbers-row" onclick="screenDisplay('2')">2</button>
+            <button class="button-numbers-row" onclick="screenDisplay('1')">1</button>
+            <button class="button-operator" onclick="screenDisplay('-')">&minus;</button>
+        </div>
+
+        <div class="button-numbers btn">
+            <button class="button-numbers-row second" onclick="screenDisplay('0')">0</button>
+            <button class="button-operator plus-btn" onclick="screenDisplay('+')">&plus;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
